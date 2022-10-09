@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+       Assignment 2(Product)
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Product Name*</label><label class="validation-error hide" id="nameValidationError">This field is required.</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div>
+                        <label>Unit Price</label>
+                        <input type="number" name="unitprice" id="unitprice">
+                    </div>
+                    <div>
+                        <label>Quantity</label>
+                        <input type="number" name="quantity" id="quantity">
+                    </div>
+                    <div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="pro">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Unit Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script2.js"></script>
+</body>
+
+</html>

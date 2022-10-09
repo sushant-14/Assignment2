@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assignment 2    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Login ID*</label><label class="validation-error hide" id="loginIdValidationError">This field is required.</label>
+                        <input type="email" name="loginId" id="loginId">
+                    </div>
+                    <div>
+                        <label>Name</label>
+                        <input type="text" name="Name" id="Name">
+                    </div>
+                    <div>
+                        <label>Phone</label>
+                        <input type="number" name="phone" id="phone">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <center><h1>Customer Table</h1></center>
+                
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Login ID</th>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+    <center>
+        <select name="p1" id="p1">
+            <option value="index1.html">Select an Option</option>
+            <option value="index1.html">Invoice</option>
+            <option value="index2.html">Product</option>
+          </select>
+    </center>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Assignment 2(Invoice)
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Invoice Number*</label><label class="validation-error hide" id="invoicenumberValidationError">This field is required.</label>
+                        <input type="text" name="invoicenumber" id="invoicenumber">
+                    </div>
+                    <div>
+                        <label>Invoice Date</label>
+                        <input type="date" name="invoicedate" id="invoicedate">
+                    </div>
+                    <div>
+                        <label>Customer Name</label>
+                        <input type="text" name="customername" id="customername">
+                    </div>
+                    <div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="invo">
+                    <thead>
+                        <tr>
+                            <th>Invoice Number</th>
+                            <th>Invoice Date</th>
+                            <th>Customer Name</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script1.js"></script>
+</body>
+
+</html>
